@@ -5,25 +5,3 @@ Date Updated:
 Version:2
 Description:MIS Homework Assignment 3 requiring a registration form */
 
-{{javascript}}
-function validateFirstName() {
-  const firstName = document.getElementById('fname').value;
-  const regex = /^[A-Za-z'-]{1,30}$/;
-  
-  if (regex.test(firstName)) {
-    alert('First name is valid!');
-  } else {
-    window.alert('Please enter a valid first name (1 to 30 characters, letters, apostrophes, and dashes only).');
-  }
-}
-
-function validateLastName() {
-  const lastName = document.getElementById('lname').value;
-  const regex = /^[A-Za-z'-]{1,30}$/;
-  
-  if (regex.test(lastName)) {
-    window.alert('Last name is valid');
-  } else {
-    alert('Please enter a valid Last Name.');
-  }
-}
